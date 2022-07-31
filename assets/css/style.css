@@ -1,0 +1,83 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bebas Neue', cursive;
+    background-color: black;
+    color: white;
+}
+
+.hero{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/arcanist.jpg);
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    filter: brightness(60%);
+}
+
+.hero-content{
+    position: relative;
+    text-align: center;
+}
+
+.hero-title{
+    font-size: 6rem;
+    font-weight:800;
+    margin-bottom: 0;
+    color: darkred;
+    text-shadow: 4px 4px white;
+}
+
+.hero-subcontent{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    width: 50%;
+    margin: 0 auto;
+    
+}
+
+.hero-subtitle{
+    color: white;
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px darkred;
+}
+
+.hero-button{
+    background-color: red;
+    color: white;
+    border: 1px solid darkred;
+    margin-top: 2rem;
+    padding: 0.9375rem 1.875rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 1.125rem;
+    font-weight: 200;
+    text-shadow: 2px 2px black;
+    box-shadow: 1px 1px 3px 1px white inset;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.instructions{
+    text-shadow: 2px 2px darkred;
+    color:white;
+    font-size: 2rem;
+}
+
+/* add media queries here, make sure to add a background image underneath the legal notice p tag when in tablet/mobile to make it easier to read */
